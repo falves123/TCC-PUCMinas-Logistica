@@ -2,7 +2,7 @@ CREATE TABLE Partner_Type(
 	Id BIGINT NOT NULL IDENTITY(1,1),
 	Description VARCHAR(255)
 
-	CONSTRAINT Id_PK PRIMARY KEY (Id)
+	CONSTRAINT Partner_type_Id_PK PRIMARY KEY (Id)
 	
 );
 
@@ -11,10 +11,10 @@ CREATE TABLE Partner(
 	CnpjCpf VARCHAR(14),
 	Name VARCHAR(60),
 	Description VARCHAR(255),
-	PartnerType INT
+	PartnerTypeId BIGINT NOT NULL
 
-	CONSTRAINT Id_PK PRIMARY KEY (Id),
-	CONSTRAINT PartnerType_Party_Id_FK FOREIGN KEY (PartnerType) REFERENCES Partner_Type(Id)
+	CONSTRAINT partner_Id_PK PRIMARY KEY (Id),
+	CONSTRAINT Partner_IdType_FK FOREIGN KEY (PartnerTypeId) REFERENCES Partner_Type(Id)
 );
 
 CREATE TABLE Customer(

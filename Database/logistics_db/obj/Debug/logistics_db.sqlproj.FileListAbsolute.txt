@@ -1,0 +1,9 @@
+/Users/fabianoalves/OneDrive/Pos-Graduacao/TCC-PUCMinas-Logistica/Database/logistics_db/bin/Debug/logistics_db.dacpac
+/Users/fabianoalves/OneDrive/Pos-Graduacao/TCC-PUCMinas-Logistica/Database/logistics_db/bin/Debug/logistics_db.dll
+/Users/fabianoalves/OneDrive/Pos-Graduacao/TCC-PUCMinas-Logistica/Database/logistics_db/bin/Debug/logistics_db.pdb
+/Users/fabianoalves/OneDrive/Pos-Graduacao/TCC-PUCMinas-Logistica/Database/logistics_db/obj/Debug/Model.xml
+/Users/fabianoalves/OneDrive/Pos-Graduacao/TCC-PUCMinas-Logistica/Database/logistics_db/obj/Debug/refactor.xml
+/Users/fabianoalves/OneDrive/Pos-Graduacao/TCC-PUCMinas-Logistica/Database/logistics_db/obj/Debug/postdeploy.sql
+/Users/fabianoalves/OneDrive/Pos-Graduacao/TCC-PUCMinas-Logistica/Database/logistics_db/obj/Debug/predeploy.sql
+/Users/fabianoalves/OneDrive/Pos-Graduacao/TCC-PUCMinas-Logistica/Database/logistics_db/obj/Debug/logistics_db.dll
+/Users/fabianoalves/OneDrive/Pos-Graduacao/TCC-PUCMinas-Logistica/Database/logistics_db/obj/Debug/logistics_db.pdb

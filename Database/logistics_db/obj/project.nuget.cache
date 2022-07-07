@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "NGJaL7WdOfoUBhy9CCCrMIAmV0eS2aUWlVNJjvq3SzEvAe78l8nCpCZKIT6R5x3MocAFLxXNoW8uzeRzUn5VkA==",
+  "success": true,
+  "projectFilePath": "/Users/fabianoalves/OneDrive/Pos-Graduacao/TCC-PUCMinas-Logistica/Database/logistics_db/logistics_db.sqlproj",
+  "expectedPackageFiles": [
+    "/Users/fabianoalves/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.0/microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "/Users/fabianoalves/.nuget/packages/microsoft.netframework.referenceassemblies.net46/1.0.0/microsoft.netframework.referenceassemblies.net46.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
