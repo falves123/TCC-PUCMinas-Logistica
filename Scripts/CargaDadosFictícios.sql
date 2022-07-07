@@ -1,13 +1,20 @@
 delete Wharehouse;
-delete ChargeHistory;
-delete Merchandise;
-delete Charge;
+delete ShippingHistory;
+delete Product;
+delete Shipping;
 delete Address;
 delete Contact;
 delete Customer;
 delete Provider;
-delete Party;
+delete Partner;
 delete Step;
+delete Partner_Type;
+
+NSERT INTO Partner_Type ( Description) VALUES 
+	('Wharehouse'),
+	('Provider'),
+	('Customer'),;
+
 
 INSERT INTO Step (Name, Description, Sequence, IsDelivered) VALUES 
 	('EntradaMercadoria', 'A mercadoria foi recebido em nossas instala��es.', 10, 0),
@@ -16,7 +23,7 @@ INSERT INTO Step (Name, Description, Sequence, IsDelivered) VALUES
 	('SaidaMercadoria', 'Saiu para entrega.', 40, 0),
 	('Entregue', 'Mercadoria entregue.', 50, 1);
 
-INSERT INTO Party (CnpjCpf, Name, Description, PartyType) VALUES
+INSERT INTO Partner (CnpjCpf, Name, Description, PartyType) VALUES
 	--Cpf
 	('81277274070', 'Pessoa Fict�cia 01', '', 0),
 	('15530503047', 'Pessoa Fict�cia 02', '', 0),
@@ -75,16 +82,16 @@ BEGIN
 	INSERT INTO Contact (Locator, Description, ContactType, Party_Id) VALUES
 		('(54) 99999-9999', CONCAT('Contato ', @count), 0, @PartyRandom)
 
-	INSERT INTO Charge (Notes, ServiceOrder, SerialNumber, TransDate, DestinationAddress_Id, DestinationCustomer_Id, OriginCustomer_Id) VALUES
+	INSERT INTO Shipping (Notes, ServiceOrder, SerialNumber, TransDate, DestinationAddress_Id, DestinationCustomer_Id, OriginCustomer_Id) VALUES
 		('', @count, @count, GETDATE(), IDENT_CURRENT('Address'), @PartyRandom, @PartyRandomCnpj)
 
-	INSERT INTO Merchandise (Sku, Quantity, UnitType, PriceUnit, Weight, Width, Length, Height, Charge_Id) VALUES
+	INSERT INTO Product (Sku, Quantity, UnitType, PriceUnit, Weight, Width, Length, Height, Charge_Id) VALUES
 		(@count, 1, 0, 299.90, 1000, 50, 50, 20, IDENT_CURRENT('Charge'))
 
 	DECLARE @countHistory INT = 1;
 	WHILE @countHistory <= 5
 	BEGIN
-		INSERT INTO ChargeHistory (Description, Step_Id, Charge_Id) VALUES
+		INSERT INTO ShippingHistory (Description, Step_Id, Charge_Id) VALUES
 			('', (SELECT Id FROM Step WHERE Sequence = @countHistory * 10), IDENT_CURRENT('Charge'))
 		
 		SET @countHistory += 1;
