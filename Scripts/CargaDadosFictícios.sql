@@ -10,11 +10,10 @@ delete Partner;
 delete Step;
 delete Partner_Type;
 
-NSERT INTO Partner_Type ( Description) VALUES 
+INSERT INTO Partner_Type ( Description) VALUES 
 	('Wharehouse'),
 	('Provider'),
-	('Customer'),;
-
+	('Customer');
 
 INSERT INTO Step (Name, Description, Sequence, IsDelivered) VALUES 
 	('EntradaMercadoria', 'A mercadoria foi recebido em nossas instala��es.', 10, 0),
