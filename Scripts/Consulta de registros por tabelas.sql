@@ -1,4 +1,4 @@
---https://www.mssqltips.com/sqlservertip/2537/sql-server-row-count-for-all-tables-in-a-database/
+-- Consulta das tabelas e quantidade de registro.
 
 SELECT
       QUOTENAME(SCHEMA_NAME(sOBJ.schema_id)) + '.' + QUOTENAME(sOBJ.name) AS [TableName]
@@ -16,3 +16,10 @@ GROUP BY
       , sOBJ.name
 ORDER BY [TableName]
 GO
+
+-- Consulta dos pedidos a serem enviados.
+
+select *  from  Customer,Partner,Partner_Type,Shipping
+where customer.Partner_Id = Partner.Id
+and Partner_Type.Id = Partner.PartnerTypeId
+and Shipping.DestinationCustomer_Id = partner.id;
