@@ -1,4 +1,4 @@
--- Script para carga inicial nas tabelas.
+-- limpando as  as tabelas.
 
 delete Wharehouse;
 delete ShippingHistory;
@@ -11,6 +11,8 @@ delete Provider;
 delete Partner;
 delete Step;
 delete Partner_Type;
+
+-- realizando a carga inicial nas tabelas.
 
 INSERT INTO Partner_Type ( Description) VALUES 
 	('Wharehouse'),
@@ -65,6 +67,7 @@ BEGIN
 
 	SET @countCPF += 1;
 END;
+
 
 DECLARE @countCNPJ INT = IDENT_CURRENT('Partner') - 4;
 WHILE @countCNPJ < IDENT_CURRENT('Partner') + 1
