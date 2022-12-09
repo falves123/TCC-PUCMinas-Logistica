@@ -1,0 +1,12 @@
+C:\Users\guilh\MSNotification\src\Adapters\AppCenter\bin\Release\net5.0\DevPrime.AppCenter.deps.json
+C:\Users\guilh\MSNotification\src\Adapters\AppCenter\bin\Release\net5.0\DevPrime.AppCenter.dll
+C:\Users\guilh\MSNotification\src\Adapters\AppCenter\bin\Release\net5.0\ref\DevPrime.AppCenter.dll
+C:\Users\guilh\MSNotification\src\Adapters\AppCenter\bin\Release\net5.0\DevPrime.AppCenter.pdb
+C:\Users\guilh\MSNotification\src\Adapters\AppCenter\obj\Release\net5.0\DevPrime.AppCenter.csproj.AssemblyReference.cache
+C:\Users\guilh\MSNotification\src\Adapters\AppCenter\obj\Release\net5.0\DevPrime.AppCenter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guilh\MSNotification\src\Adapters\AppCenter\obj\Release\net5.0\DevPrime.AppCenter.AssemblyInfoInputs.cache
+C:\Users\guilh\MSNotification\src\Adapters\AppCenter\obj\Release\net5.0\DevPrime.AppCenter.AssemblyInfo.cs
+C:\Users\guilh\MSNotification\src\Adapters\AppCenter\obj\Release\net5.0\DevPrime.AppCenter.csproj.CoreCompileInputs.cache
+C:\Users\guilh\MSNotification\src\Adapters\AppCenter\obj\Release\net5.0\DevPrime.AppCenter.dll
+C:\Users\guilh\MSNotification\src\Adapters\AppCenter\obj\Release\net5.0\ref\DevPrime.AppCenter.dll
+C:\Users\guilh\MSNotification\src\Adapters\AppCenter\obj\Release\net5.0\DevPrime.AppCenter.pdb

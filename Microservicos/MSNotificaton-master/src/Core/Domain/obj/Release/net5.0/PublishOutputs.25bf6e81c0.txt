@@ -1,0 +1,7 @@
+C:\Users\guilh\MSNotification\out\Domain_tmp.dll
+C:\Users\guilh\MSNotification\out\Domain_tmp.deps.json
+C:\Users\guilh\MSNotification\out\Domain_tmp.pdb
+C:\Users\guilh\MSNotification\out\devprime.stack.foundation.dll
+C:\Users\guilh\MSNotification\out\FluentValidation.dll
+C:\Users\guilh\MSNotification\out\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\guilh\MSNotification\out\Microsoft.Extensions.DependencyInjection.Abstractions.dll

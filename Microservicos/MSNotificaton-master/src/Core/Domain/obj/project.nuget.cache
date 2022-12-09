@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "RLPUq0qpdz6uIf0mjS1YGapUwCDHBGei9y/qodYk9oyLrNOn1rEddzrvs8fZP6+H0Lrjy/PkxAgo9lelTvRPiQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\guilh\\MSNotification\\src\\Core\\Domain\\Domain_tmp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\guilh\\.nuget\\packages\\devprime.stack.foundation\\5.4.81\\devprime.stack.foundation.5.4.81.nupkg.sha512",
+    "C:\\Users\\guilh\\.nuget\\packages\\fluentvalidation\\9.5.1\\fluentvalidation.9.5.1.nupkg.sha512",
+    "C:\\Users\\guilh\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "C:\\Users\\guilh\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

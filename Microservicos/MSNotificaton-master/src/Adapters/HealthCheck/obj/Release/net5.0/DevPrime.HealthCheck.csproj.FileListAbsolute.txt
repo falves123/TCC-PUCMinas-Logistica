@@ -1,0 +1,17 @@
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\bin\Release\net5.0\DevPrime.HealthCheck.deps.json
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\bin\Release\net5.0\DevPrime.HealthCheck.dll
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\bin\Release\net5.0\ref\DevPrime.HealthCheck.dll
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\bin\Release\net5.0\DevPrime.HealthCheck.pdb
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\bin\Release\net5.0\Application.dll
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\bin\Release\net5.0\Domain.dll
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\bin\Release\net5.0\Domain.pdb
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\bin\Release\net5.0\Application.pdb
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\obj\Release\net5.0\DevPrime.HealthCheck.csproj.AssemblyReference.cache
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\obj\Release\net5.0\DevPrime.HealthCheck.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\obj\Release\net5.0\DevPrime.HealthCheck.AssemblyInfoInputs.cache
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\obj\Release\net5.0\DevPrime.HealthCheck.AssemblyInfo.cs
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\obj\Release\net5.0\DevPrime.HealthCheck.csproj.CoreCompileInputs.cache
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\obj\Release\net5.0\DevPrime.HealthCheck.csproj.CopyComplete
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\obj\Release\net5.0\DevPrime.HealthCheck.dll
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\obj\Release\net5.0\ref\DevPrime.HealthCheck.dll
+C:\Users\guilh\MSNotification\src\Adapters\HealthCheck\obj\Release\net5.0\DevPrime.HealthCheck.pdb

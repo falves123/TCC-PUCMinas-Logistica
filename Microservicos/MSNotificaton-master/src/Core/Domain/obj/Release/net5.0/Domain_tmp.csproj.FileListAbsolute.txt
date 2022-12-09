@@ -1,0 +1,12 @@
+C:\Users\guilh\MSNotification\src\Core\Domain\bin\Release\net5.0\Domain_tmp.deps.json
+C:\Users\guilh\MSNotification\src\Core\Domain\bin\Release\net5.0\Domain_tmp.dll
+C:\Users\guilh\MSNotification\src\Core\Domain\bin\Release\net5.0\ref\Domain_tmp.dll
+C:\Users\guilh\MSNotification\src\Core\Domain\bin\Release\net5.0\Domain_tmp.pdb
+C:\Users\guilh\MSNotification\src\Core\Domain\obj\Release\net5.0\Domain_tmp.csproj.AssemblyReference.cache
+C:\Users\guilh\MSNotification\src\Core\Domain\obj\Release\net5.0\Domain_tmp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guilh\MSNotification\src\Core\Domain\obj\Release\net5.0\Domain_tmp.AssemblyInfoInputs.cache
+C:\Users\guilh\MSNotification\src\Core\Domain\obj\Release\net5.0\Domain_tmp.AssemblyInfo.cs
+C:\Users\guilh\MSNotification\src\Core\Domain\obj\Release\net5.0\Domain_tmp.csproj.CoreCompileInputs.cache
+C:\Users\guilh\MSNotification\src\Core\Domain\obj\Release\net5.0\Domain_tmp.dll
+C:\Users\guilh\MSNotification\src\Core\Domain\obj\Release\net5.0\ref\Domain_tmp.dll
+C:\Users\guilh\MSNotification\src\Core\Domain\obj\Release\net5.0\Domain_tmp.pdb

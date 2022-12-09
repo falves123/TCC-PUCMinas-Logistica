@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "Hm42SRrURosM612vr04mzuszezYx4mX/8HfKOwpuvei34Tr8uwWT2dwooifLBy6wEzmDNwJkYvX7YiMC/NexMA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\guilh\\MSNotification\\src\\Adapters\\HealthCheck\\DevPrime.HealthCheck.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\guilh\\.nuget\\packages\\devprime.stack.foundation\\5.4.81\\devprime.stack.foundation.5.4.81.nupkg.sha512",
+    "C:\\Users\\guilh\\.nuget\\packages\\devprime.stack.healthcheck\\5.4.81\\devprime.stack.healthcheck.5.4.81.nupkg.sha512",
+    "C:\\Users\\guilh\\.nuget\\packages\\fluentvalidation\\9.5.1\\fluentvalidation.9.5.1.nupkg.sha512",
+    "C:\\Users\\guilh\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "C:\\Users\\guilh\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
