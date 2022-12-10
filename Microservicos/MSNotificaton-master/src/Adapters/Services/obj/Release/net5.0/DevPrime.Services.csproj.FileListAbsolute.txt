@@ -1,0 +1,17 @@
+C:\Users\guilh\MSNotification\src\Adapters\Services\bin\Release\net5.0\DevPrime.Services.deps.json
+C:\Users\guilh\MSNotification\src\Adapters\Services\bin\Release\net5.0\DevPrime.Services.dll
+C:\Users\guilh\MSNotification\src\Adapters\Services\bin\Release\net5.0\ref\DevPrime.Services.dll
+C:\Users\guilh\MSNotification\src\Adapters\Services\bin\Release\net5.0\DevPrime.Services.pdb
+C:\Users\guilh\MSNotification\src\Adapters\Services\bin\Release\net5.0\Application.dll
+C:\Users\guilh\MSNotification\src\Adapters\Services\bin\Release\net5.0\Domain.dll
+C:\Users\guilh\MSNotification\src\Adapters\Services\bin\Release\net5.0\Domain.pdb
+C:\Users\guilh\MSNotification\src\Adapters\Services\bin\Release\net5.0\Application.pdb
+C:\Users\guilh\MSNotification\src\Adapters\Services\obj\Release\net5.0\DevPrime.Services.csproj.AssemblyReference.cache
+C:\Users\guilh\MSNotification\src\Adapters\Services\obj\Release\net5.0\DevPrime.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guilh\MSNotification\src\Adapters\Services\obj\Release\net5.0\DevPrime.Services.AssemblyInfoInputs.cache
+C:\Users\guilh\MSNotification\src\Adapters\Services\obj\Release\net5.0\DevPrime.Services.AssemblyInfo.cs
+C:\Users\guilh\MSNotification\src\Adapters\Services\obj\Release\net5.0\DevPrime.Services.csproj.CoreCompileInputs.cache
+C:\Users\guilh\MSNotification\src\Adapters\Services\obj\Release\net5.0\DevPrime.Services.csproj.CopyComplete
+C:\Users\guilh\MSNotification\src\Adapters\Services\obj\Release\net5.0\DevPrime.Services.dll
+C:\Users\guilh\MSNotification\src\Adapters\Services\obj\Release\net5.0\ref\DevPrime.Services.dll
+C:\Users\guilh\MSNotification\src\Adapters\Services\obj\Release\net5.0\DevPrime.Services.pdb

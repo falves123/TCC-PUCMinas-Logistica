@@ -1,0 +1,140 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "DevPrime.Tools/1.0.0.0": {
+        "dependencies": {
+          "Application": "1.0.0",
+          "Domain": "1.0.0",
+          "devprime.stack.tools": "5.4.81"
+        },
+        "runtime": {
+          "DevPrime.Tools.dll": {}
+        }
+      },
+      "devprime.stack.foundation/5.4.81": {
+        "dependencies": {
+          "FluentValidation": "9.5.1",
+          "Microsoft.Extensions.DependencyInjection": "5.0.1"
+        },
+        "runtime": {
+          "lib/net5.0/devprime.stack.foundation.dll": {
+            "assemblyVersion": "5.4.81.0",
+            "fileVersion": "5.4.81.0"
+          }
+        }
+      },
+      "devprime.stack.tools/5.4.81": {
+        "dependencies": {
+          "devprime.stack.foundation": "5.4.81"
+        },
+        "runtime": {
+          "lib/net5.0/devprime.stack.tools.dll": {
+            "assemblyVersion": "5.4.81.0",
+            "fileVersion": "5.4.81.0"
+          }
+        }
+      },
+      "FluentValidation/9.5.1": {
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.5.1.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/5.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "5.0.0.1",
+            "fileVersion": "5.0.120.57516"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "Application/1.0.0": {
+        "dependencies": {
+          "Domain": "1.0.0",
+          "devprime.stack.foundation": "5.4.81"
+        },
+        "runtime": {
+          "Application.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "dependencies": {
+          "devprime.stack.foundation": "5.4.81"
+        },
+        "runtime": {
+          "Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DevPrime.Tools/1.0.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "devprime.stack.foundation/5.4.81": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aXy33XCqLHIWcRXqgNzgnFhws+aDQIozR+jkqoi1O++N3042VtIcL512xJuPMmyeNqVWWWyc+xSaOoXtmAcRgg==",
+      "path": "devprime.stack.foundation/5.4.81",
+      "hashPath": "devprime.stack.foundation.5.4.81.nupkg.sha512"
+    },
+    "devprime.stack.tools/5.4.81": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2mFdZBsDYborrZ2yv5wNq4ajPLcHyaV/hNGAsw0IPAfAHrw16lGT/zHJ3B9ZBz6nFcpRDz2pwY3Ou9mZLbm3Ow==",
+      "path": "devprime.stack.tools/5.4.81",
+      "hashPath": "devprime.stack.tools.5.4.81.nupkg.sha512"
+    },
+    "FluentValidation/9.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-By09e2m4N3giD7Giq8NCFgkgN5Hkm8Lv/bk8AadD9Xc6jjj2WDGrD6l9keZbWbkO9aygiHQREIt47iS2sVSU7w==",
+      "path": "fluentvalidation/9.5.1",
+      "hashPath": "fluentvalidation.9.5.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-//mDNrYeiJ0eh/awFhDFJQzkRVra/njU5Y4fyK7X29g5HScrzbUkKOKlyTtygthcGFt4zNC8G5CFCjb/oizomA==",
+      "path": "microsoft.extensions.dependencyinjection/5.0.1",
+      "hashPath": "microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+    },
+    "Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
