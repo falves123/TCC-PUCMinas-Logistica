@@ -92,18 +92,6 @@ public class OrderRepository : RepositoryBase, IOrderRepository
                 exp = p => p.CustomerName;
             else if (field.ToLower() == "customertaxid")
                 exp = p => p.CustomerTaxID;
-            else if (field.ToLower() == "zipcode")
-                exp = p => p.Zipcode;
-            else if (field.ToLower() == "address")
-                exp = p => p.Address;
-            else if (field.ToLower() == "number")
-                exp = p => p.Number;
-            else if (field.ToLower() == "city")
-                exp = p => p.City;
-            else if (field.ToLower() == "uf")
-                exp = p => p.UF;
-            else if (field.ToLower() == "complement")
-                exp = p => p.Complement;
             else if (field.ToLower() == "total")
                 exp = p => p.Total;
             else
@@ -131,18 +119,6 @@ public class OrderRepository : RepositoryBase, IOrderRepository
                         exp = p => p.CustomerName.ToLower() == value.ToLower();
                     else if (field.ToLower() == "customertaxid")
                         exp = p => p.CustomerTaxID.ToLower() == value.ToLower();
-                    else if (field.ToLower() == "zipcode")
-                        exp = p => p.Zipcode.ToLower() == value.ToLower();
-                    else if (field.ToLower() == "address")
-                        exp = p => p.Address.ToLower() == value.ToLower();
-                    else if (field.ToLower() == "number")
-                        exp = p => p.Number.ToLower() == value.ToLower();
-                    else if (field.ToLower() == "city")
-                        exp = p => p.City.ToLower() == value.ToLower();
-                    else if (field.ToLower() == "uf")
-                        exp = p => p.UF.ToLower() == value.ToLower();
-                    else if (field.ToLower() == "complement")
-                        exp = p => p.Complement.ToLower() == value.ToLower();        
                     else if (field.ToLower() == "total")
                         exp = p => p.Total == Convert.ToDouble(value);
                     else
@@ -185,12 +161,6 @@ public class OrderRepository : RepositoryBase, IOrderRepository
         _order.OrderID = order.ID;
         _order.CustomerName = order.CustomerName;
         _order.CustomerTaxID = order.CustomerTaxID;
-        _order.Zipcode = order.Zipcode;
-        _order.Address = order.Address;
-        _order.Number = order.Number;
-        _order.City = order.City;
-        _order.UF = order.UF;
-        _order.Complement = order.Complement;
         _order.Items = ToState(order.Items);
         _order.Total = order.Total;
         return _order;
@@ -233,7 +203,7 @@ public class OrderRepository : RepositoryBase, IOrderRepository
         if (order is null)
             return new Domain.Aggregates.Order.Order()
             {IsNew = true};
-        Domain.Aggregates.Order.Order _order = new Domain.Aggregates.Order.Order(order.OrderID, order.CustomerName, order.CustomerTaxID, order.Zipcode,order.Address,order.Number,order.City,order.UF,order.Complement, ToDomain(order.Items), order.Total);
+        Domain.Aggregates.Order.Order _order = new Domain.Aggregates.Order.Order(order.OrderID, order.CustomerName, order.CustomerTaxID, ToDomain(order.Items), order.Total);
         return _order;
     }
 
@@ -267,7 +237,7 @@ public class OrderRepository : RepositoryBase, IOrderRepository
         {
             foreach (var order in orderList)
             {
-                Domain.Aggregates.Order.Order _order = new Domain.Aggregates.Order.Order(order.OrderID, order.CustomerName, order.CustomerTaxID, order.Zipcode, order.Address, order.Number, order.City, order.UF, order.Complement, ToDomain(order.Items), order.Total);
+                Domain.Aggregates.Order.Order _order = new Domain.Aggregates.Order.Order(order.OrderID, order.CustomerName, order.CustomerTaxID, ToDomain(order.Items), order.Total);
                 _orderList.Add(_order);
             }
         }

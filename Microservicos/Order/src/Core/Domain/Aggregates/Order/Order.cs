@@ -3,12 +3,6 @@ public class Order : AggRoot
 {
     public string CustomerName { get; private set; }
     public string CustomerTaxID { get; private set; }
-    public string Zipcode { get; private set; }
-    public string Address { get; private set; }
-    public string Number { get; private set; }
-    public string City { get; private set; }
-    public string UF { get; private set; }
-    public string Complement { get; private set; }   
     public IList<Item> Items { get; private set; }
     public double Total { get; private set; }
     public void AddItem(Item item)
@@ -23,17 +17,11 @@ public class Order : AggRoot
         }
     }
 
-    public Order(Guid id, string customerName, string customerTaxID, string zipcode, string address, string number, string city, string uf, string complement, IEnumerable<Domain.Aggregates.Order.Item> items, double total)
+    public Order(Guid id, string customerName, string customerTaxID, IEnumerable<Domain.Aggregates.Order.Item> items, double total)
     {
         ID = id;
         CustomerName = customerName;
         CustomerTaxID = customerTaxID;
-        Zipcode = zipcode;
-        Address = address;
-        Number = number;
-        City = city;
-        UF = uf;
-        Complement = complement;
         Items = items?.ToList();
         Total = total;
     }
@@ -89,23 +77,11 @@ public class Order : AggRoot
                         filterIsValid = true;
                     if (filter.ToLower().StartsWith("customertaxid="))
                         filterIsValid = true;
-                    if (filter.ToLower().StartsWith("zipcode="))
-                        filterIsValid = true;
-                    if (filter.ToLower().StartsWith("address="))
-                        filterIsValid = true;
-                    if (filter.ToLower().StartsWith("number="))
-                        filterIsValid = true;
-                    if (filter.ToLower().StartsWith("city="))
-                        filterIsValid = true;
-                    if (filter.ToLower().StartsWith("uf="))
-                        filterIsValid = true;
-                    if (filter.ToLower().StartsWith("complement="))
-                        filterIsValid = true;
                     if (filter.ToLower().StartsWith("total="))
                         filterIsValid = true;
                 }
                 if (!filterIsValid)
-                    throw new PublicException($"Invalid filter '{filter}' is invalid try: 'ID', 'CustomerName', 'CustomerTaxID', 'Zipcode', 'Address', 'Number', 'City', 'UF', 'Complement', 'Total',");
+                    throw new PublicException($"Invalid filter '{filter}' is invalid try: 'ID', 'CustomerName', 'CustomerTaxID', 'Total',");
             }
             var source = Dp.ProcessEvent(new OrderGet()
             {Limit = limit, Offset = offset, Ordering = ordering, Sort = sort, Filter = filter});
@@ -118,16 +94,6 @@ public class Order : AggRoot
             Dp.Notifications.Add("CustomerName is required");
         if (String.IsNullOrWhiteSpace(CustomerTaxID))
             Dp.Notifications.Add("CustomerTaxID is required");
-        if (String.IsNullOrWhiteSpace(Zipcode))
-            Dp.Notifications.Add("Zipcode is required");
-        if (String.IsNullOrWhiteSpace(Address))
-            Dp.Notifications.Add("Address is required");
-        if (String.IsNullOrWhiteSpace(Number))
-            Dp.Notifications.Add("Number is required");
-        if (String.IsNullOrWhiteSpace(City))
-            Dp.Notifications.Add("City is required");
-        if (String.IsNullOrWhiteSpace(UF))
-            Dp.Notifications.Add("UF is required");
         Dp.Notifications.ValidateAndThrow();
     }
 }

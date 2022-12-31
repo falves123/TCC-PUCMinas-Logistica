@@ -1,7 +1,13 @@
 ﻿var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<ConnectionEF>(options => options.UseSqlServer(StateAdapter.GetConnection("State1").ConnectionString).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IProductState, ProductState>();
+builder.Services.AddDbContext<ConnectionEF>(options => options.UseSqlServer(StateAdapter.GetConnection("State1").ConnectionString).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
+builder.Services.AddDbContext<ConnectionEF>(options => options.UseSqlServer(StateAdapter.GetConnection("State1").ConnectionString).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
+builder.Services.AddScoped<IDeliveryRepository, DeliveryRepository>();
+builder.Services.AddScoped<IDeliveryService, DeliveryService>();
+builder.Services.AddScoped<IDeliveryState, DeliveryState>();
 builder.Services.AddDbContext<ConnectionEF>(options => options.UseSqlServer(StateAdapter.GetConnection("State1").ConnectionString).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
 builder.Services.AddMvc(o =>
 {

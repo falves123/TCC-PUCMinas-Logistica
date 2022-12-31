@@ -3,12 +3,6 @@ public class Order
 {
     public string CustomerName { get; set; }
     public string CustomerTaxID { get; set; }
-    public string Zipcode { get; set; }
-    public string Address { get; set; }
-    public string Number { get; set; }
-    public string City { get; set; }
-    public string UF { get; set; }
-    public string Complement { get; set; }    
     public IList<DevPrime.Web.Models.Order.Item> Items { get; set; }
     public double Total { get; set; }
     public static Application.Services.Order.Model.Order ToApplication(DevPrime.Web.Models.Order.Order order)
@@ -18,12 +12,6 @@ public class Order
         Application.Services.Order.Model.Order _order = new Application.Services.Order.Model.Order();
         _order.CustomerName = order.CustomerName;
         _order.CustomerTaxID = order.CustomerTaxID;
-        _order.Zipcode = order.Zipcode;
-        _order.Address = order.Address;
-        _order.Number = order.Number;
-        _order.City = order.City;
-        _order.UF = order.UF;
-        _order.Complement = order.Complement;
         _order.Items = DevPrime.Web.Models.Order.Item.ToApplication(order.Items);
         _order.Total = order.Total;
         return _order;
@@ -39,12 +27,6 @@ public class Order
                 Application.Services.Order.Model.Order _order = new Application.Services.Order.Model.Order();
                 _order.CustomerName = order.CustomerName;
                 _order.CustomerTaxID = order.CustomerTaxID;
-                _order.Zipcode = order.Zipcode;
-                _order.Address = order.Address;
-                _order.Number = order.Number;
-                _order.City = order.City;
-                _order.UF = order.UF;
-                _order.Complement = order.Complement;
                 _order.Items = DevPrime.Web.Models.Order.Item.ToApplication(order.Items);
                 _order.Total = order.Total;
                 _orderList.Add(_order);

@@ -3,7 +3,7 @@ public class OrderModelMock : Application.Services.Order.Model.Order
 {
     public override Domain.Aggregates.Order.Order ToDomain()
     {
-        var agg = MockOrderAggRoot(this.ID, this.CustomerName, this.CustomerTaxID, this.CustomerTaxID, this.Zipcode, this.Address, this.Number, this.City, this.UF, this.Complement, null, this.Total);
+        var agg = MockOrderAggRoot(this.ID, this.CustomerName, this.CustomerTaxID, null, this.Total);
         return agg;
     }
 
@@ -13,12 +13,6 @@ public class OrderModelMock : Application.Services.Order.Model.Order
         model.ID = agg.ID;
         model.CustomerName = agg.CustomerName;
         model.CustomerTaxID = agg.CustomerTaxID;
-        model.Zipcode = agg.Zipcode;
-        model.Address = agg.Address;
-        model.Number = agg.Number;
-        model.City = agg.City;
-        model.UF = agg.UF;
-        model.Complement = agg.Complement;
         model.Total = agg.Total;
         return model;
     }
@@ -29,9 +23,9 @@ public class OrderModelMock : Application.Services.Order.Model.Order
         agg.DevPrimeSetProperty<Guid>("ID", id);
         return agg;
     }
-    private Domain.Aggregates.Order.Order MockOrderAggRoot(Guid iD, string customerName, string customerTaxID, string Zipcode, string Address, string Number, string City, string UF, string Complement, List<Domain.Aggregates.Order.Item> items, double total)
+    private Domain.Aggregates.Order.Order MockOrderAggRoot(Guid iD, string customerName, string customerTaxID, List<Domain.Aggregates.Order.Item> items, double total)
     {
-        var AggMock = new Mock<Domain.Aggregates.Order.Order>(iD, customerName, customerTaxID, Zipcode, Address, Number, City, UF, Complement, items, total);
+        var AggMock = new Mock<Domain.Aggregates.Order.Order>(iD, customerName, customerTaxID, items, total);
         var agg = AggMock.Object;
         AggMock.Setup(o => o.Add()).Callback(() =>
         {
@@ -56,12 +50,6 @@ public class OrderServiceMock
         var agg = new OrderModelMock();
         agg.CustomerName = Faker.Lorem.Sentence();
         agg.CustomerTaxID = Faker.Lorem.Sentence();
-        agg.Zipcode = Faker.Lorem.Sentence();
-        agg.Address = Faker.Lorem.Sentence();
-        agg.Number = Faker.Lorem.Sentence();
-        agg.City = Faker.Lorem.Sentence();
-        agg.UF = Faker.Lorem.Sentence();
-        agg.Complement = Faker.Lorem.Sentence();
         agg.Total = Faker.RandomNumber.Next();
         return agg;
     }

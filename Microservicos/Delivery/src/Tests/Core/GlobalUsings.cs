@@ -7,5 +7,7 @@ global using DevPrime.Stack.Foundation.Exceptions;
 global using DevPrime.Stack.Test;
 global using System.Linq;
 global using Application.Interfaces.Adapters.State;
+global using Application.Services.Delivery;
+global using Domain.Aggregates.Delivery.Events;
 global using Application.Services.Product;
 global using Domain.Aggregates.Product.Events;

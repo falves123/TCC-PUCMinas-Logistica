@@ -2,12 +2,6 @@ CREATE TABLE [Order] (
     [OrderID] uniqueidentifier NOT NULL,
     [CustomerName] nvarchar(max) NULL,
     [CustomerTaxID] nvarchar(max) NULL,
-    [Zipcode] nvarchar(max) NULL,
-    [Address] nvarchar(max) NULL,
-    [Number] nvarchar(max) NULL,
-    [City] nvarchar(max) NULL,
-    [UF] nvarchar(max) NULL,
-    [Complement] nvarchar(max) NULL,
     [Total] float NOT NULL,
     CONSTRAINT [PK_Order] PRIMARY KEY ([OrderID])
 );

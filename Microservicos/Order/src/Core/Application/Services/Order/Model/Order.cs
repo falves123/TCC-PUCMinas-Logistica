@@ -18,12 +18,6 @@ public class Order
     public Guid ID { get; set; }
     public string CustomerName { get; set; }
     public string CustomerTaxID { get; set; }
-    public string Zipcode { get; set; }
-    public string Address { get; set; }
-    public string Number { get; set; }
-    public string City { get; set; }
-    public string UF { get; set; }
-    public string Complement { get; set; }    
     public IList<Application.Services.Order.Model.Item> Items { get; set; }
     public double Total { get; set; }
     public virtual PagingResult<IList<Order>> ToOrderList(IList<Domain.Aggregates.Order.Order> orderList, long? total, int? offSet, int? limit)
@@ -68,12 +62,6 @@ public class Order
         _order.ID = order.ID;
         _order.CustomerName = order.CustomerName;
         _order.CustomerTaxID = order.CustomerTaxID;
-        _order.Zipcode = order.Zipcode;
-        _order.Address = order.Address;
-        _order.Number = order.Number;
-        _order.City = order.City;
-        _order.UF = order.UF;
-        _order.Complement = order.Complement;
         _order.Items = Application.Services.Order.Model.Item.ToApplication(order.Items);
         _order.Total = order.Total;
         return _order;
@@ -90,12 +78,6 @@ public class Order
                 _order.ID = order.ID;
                 _order.CustomerName = order.CustomerName;
                 _order.CustomerTaxID = order.CustomerTaxID;
-                _order.Zipcode = order.Zipcode;
-                _order.Address = order.Address;
-                _order.Number = order.Number;
-                _order.City = order.City;
-                _order.UF = order.UF;
-                _order.Complement = order.Complement;
                 _order.Items = Application.Services.Order.Model.Item.ToApplication(order.Items);
                 _order.Total = order.Total;
                 _orderList.Add(_order);
@@ -108,7 +90,7 @@ public class Order
     {
         if (order is null)
             return new Domain.Aggregates.Order.Order();
-        Domain.Aggregates.Order.Order _order = new Domain.Aggregates.Order.Order(order.ID, order.CustomerName, order.CustomerTaxID, order.Zipcode, order.Address, order.Number, order.City, order.UF, order.Complement, Application.Services.Order.Model.Item.ToDomain(order.Items), order.Total);
+        Domain.Aggregates.Order.Order _order = new Domain.Aggregates.Order.Order(order.ID, order.CustomerName, order.CustomerTaxID, Application.Services.Order.Model.Item.ToDomain(order.Items), order.Total);
         return _order;
     }
 
@@ -119,7 +101,7 @@ public class Order
         {
             foreach (var order in orderList)
             {
-                Domain.Aggregates.Order.Order _order = new Domain.Aggregates.Order.Order(order.ID, order.CustomerName, order.CustomerTaxID, order.Zipcode, order.Address, order.Number, order.City, order.UF, order.Complement, Application.Services.Order.Model.Item.ToDomain(order.Items), order.Total);
+                Domain.Aggregates.Order.Order _order = new Domain.Aggregates.Order.Order(order.ID, order.CustomerName, order.CustomerTaxID, Application.Services.Order.Model.Item.ToDomain(order.Items), order.Total);
                 _orderList.Add(_order);
             }
         }

@@ -16,4 +16,5 @@ global using System.Text;
 global using DevPrime.Stack.Foundation;
 global using DevPrime.Stack.Foundation.Application;
 global using Application.Interfaces.Services;
+global using Application.Services.Delivery.Model;
 global using Application.Services.Product.Model;
