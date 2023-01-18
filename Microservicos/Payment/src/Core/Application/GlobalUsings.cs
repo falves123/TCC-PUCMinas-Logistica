@@ -9,3 +9,4 @@ global using Application.Interfaces.Adapters.Extensions;
 global using Application.Services.Payment.Model;
 global using Application.EventHandlers.Payment;
 global using Domain.Aggregates.Payment.Events;
+global using Application.EventHandlers.Payment.Model;

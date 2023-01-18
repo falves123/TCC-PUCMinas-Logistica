@@ -23,7 +23,17 @@ public class Payment : AggRoot
             ValidFields();
             ID = Guid.NewGuid();
             IsNew = true;
-            Dp.ProcessEvent(new PaymentCreated());
+
+            var itens = Dp.ProcessEvent<IList<Item>>(new OrderGet(OrderID));
+
+            if (itens is { Count: > 0 })
+            {
+                Dp.ProcessEvent(new PaymentCreated());
+            }
+            else
+            {
+                Dp.ProcessEvent(new EventReject("Unable to process order items"));
+            }
         });
     }
 

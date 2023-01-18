@@ -1,4 +1,4 @@
-namespace Application.Services.Payment.Model;
+namespace Application.EventHandlers.Payment.Model;
 public class OrderCreatedEventDTO
 {
     public Guid ID { get; set; }
