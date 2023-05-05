@@ -1,1 +1,0 @@
-DevPrime.Stack.Web.WebAdapter.Initialize();
